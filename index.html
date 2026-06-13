@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotebookLM Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>NotebookLM <span>Hub</span></h1>
+      <p>Gerencie e organize suas fontes de estudo e guias de áudio.</p>
+    </header>
+
+    <section class="form-section">
+      <form id="linkForm">
+        <div class="input-group">
+          <label for="title">Título do Material</label>
+          <input type="text" id="title" placeholder="Ex: Resumo de Sistemas Distribuídos" required>
+        </div>
+        <div class="input-group">
+          <label for="url">URL do NotebookLM</label>
+          <input type="url" id="url" placeholder="https://notebooklm.google.com/..." required>
+        </div>
+        <div class="input-group" style="flex: 0.5;">
+          <label for="subject">Disciplina</label>
+          <input type="text" id="subject" placeholder="Ex: IA" required>
+        </div>
+        <button type="submit" id="submitBtn">Adicionar</button>
+      </form>
+    </section>
+
+    <section>
+      <div id="linksGrid" class="links-grid">
+        <p>Carregando links...</p>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
